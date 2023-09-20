@@ -3,6 +3,18 @@
 const assignmentTable = document.getElementById("assignment-table");
 const assignmentList = document.getElementById("assignment-list");
 
+function login(userType) {
+    localStorage.setItem("userType", userType);
+
+    // Redirect to the respective dashboard based on user type
+    if (userType === "teacher") {
+        window.location.href = "teacher.html";
+    } else if (userType === "student") {
+        window.location.href = "index.html";
+    }
+}
+
+
 function displayAssignments() {
     const tbody = assignmentList;
     tbody.innerHTML = "";

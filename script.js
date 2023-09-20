@@ -5,6 +5,18 @@ const assignmentTable = document.getElementById("assignment-table");
 // Retrieve assignments from local storage
 const assignments = JSON.parse(localStorage.getItem("assignments")) || [];
 
+function login(userType) {
+    localStorage.setItem("userType", userType);
+
+    // Redirect to the respective dashboard based on user type
+    if (userType === "teacher") {
+        window.location.href = "teacher.html";
+    } else if (userType === "student") {
+        window.location.href = "index.html";
+    }
+}
+
+
 // Function to update assignment status based on due date and submission
 function updateAssignmentStatus(assignment) {
     const currentDate = new Date();

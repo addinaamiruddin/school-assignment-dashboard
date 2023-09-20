@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Student Dashboard</h1>
+        <button onclick="login('teacher')">Teacher</button>
+        <button onclick="login('student')">Student</button>
     </header>
-    
+
     <section class="assignment-table">
         <h2>Assignment List</h2>
         <table id="assignment-table">
@@ -27,5 +31,7 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
+
 </html>
