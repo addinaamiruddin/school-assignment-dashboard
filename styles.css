@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px;
+}
+
+.add-assignment input,
+.add-assignment button {
+    margin-right: 10px;
+}
+
+.assignment-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.assignment-list li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.column-name {
+    width: 50%; /* Adjust the width as needed */
+    text-align: left;
+}
+
+.column-date {
+    width: 20%; /* Adjust the width as needed */
+    text-align: left;
+}
+
+.column-status {
+    width: 20%; /* Adjust the width as needed */
+    text-align: left;
+}
+
+.column-submit {
+    width: 10%;
+    text-align: left;
+}

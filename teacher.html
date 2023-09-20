@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Teacher Dashboard</h1>
+    </header>
+    
+    <section class="add-assignment">
+        <h2>Add New Assignment</h2>
+        <input type="text" id="assignment-name" placeholder="Assignment Name">
+        <input type="date" id="due-date">
+        <button onclick="addAssignment()">Add</button>
+    </section>
+
+    <section class="assignment-list">
+        <h2>Assignment List</h2>
+        <table id="assignment-table">
+            <thead>
+                <tr>
+                    <th>Assignment Name</th>
+                    <th>Due Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="assignment-list"></tbody>
+        </table>
+    </section>
+
+    <script src="teacher.js"></script>
+</body>
+</html>
