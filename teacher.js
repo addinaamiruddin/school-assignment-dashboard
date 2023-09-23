@@ -2,6 +2,8 @@
 
 const assignmentTable = document.getElementById("assignment-table");
 const assignmentList = document.getElementById("assignment-list");
+const assignmentNameInput = document.getElementById("assignment-name");
+const dueDateInput = document.getElementById("due-date");
 
 function login(userType) {
     localStorage.setItem("userType", userType);
@@ -14,9 +16,8 @@ function login(userType) {
     }
 }
 
-
 function displayAssignments() {
-    const tbody = assignmentList;
+    const tbody = document.getElementById("assignment-list");
     tbody.innerHTML = "";
 
     assignments.forEach((assignment, index) => {
@@ -66,11 +67,10 @@ function addAssignment() {
         };
 
         // Store the assignment in local storage
-        const assignments = JSON.parse(localStorage.getItem("assignments")) || [];
         assignments.push(assignment);
         localStorage.setItem("assignments", JSON.stringify(assignments));
 
-        // Display the assignment in the table
+        // Refresh the table to display the new assignment immediately
         displayAssignments();
 
         // Clear input fields

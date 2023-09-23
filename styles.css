@@ -1,66 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 section {
-    margin: 20px;
+  margin: 20px;
 }
 
 .add-assignment input,
 .add-assignment button {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .assignment-list ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .assignment-list li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 .column-name {
-    width: 50%; /* Adjust the width as needed */
-    text-align: left;
+  width: 50%; /* Adjust the width as needed */
+  text-align: left;
 }
 
 .column-date {
-    width: 20%; /* Adjust the width as needed */
-    text-align: left;
+  width: 20%; /* Adjust the width as needed */
+  text-align: left;
 }
 
 .column-status {
-    width: 20%; /* Adjust the width as needed */
-    text-align: left;
+  width: 20%; /* Adjust the width as needed */
+  text-align: left;
 }
 
 .column-submit {
-    width: 10%;
-    text-align: left;
+  width: 10%;
+  text-align: left;
+}
+
+.assignment-container {
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+.assignment-container > h2 {
+  text-align: center;
+}
+
+#assignment-table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse borders to remove spacing */
+}
+
+#assignment-table th,
+#assignment-table td {
+  border: 1px solid #ccc; /* Add a 1px solid gray border to table cells */
+  padding: 8px; /* Add padding for cell content */
+}
+
+.green-text {
+  color: rgb(
+    2,
+    213,
+    2
+  ); /* Set text color to green for "Submitted" assignments */
+  font-weight: bold;
+}
+
+.red-text {
+  color: red; /* Set text color to red for "Missing" and "Late Submission" assignments */
+  font-weight: bold;
 }
